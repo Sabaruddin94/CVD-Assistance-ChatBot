@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Classification of Healthy and Unhealthy Artery
 
 This project focuses on building a deep learning model for the classification of healthy and unhealthy arteries using Convolutional Neural Networks (CNNs) and Transfer Learning with the MobileNetV2 architecture. The model is trained to achieve an accuracy of over 80%, enabling it to classify artery images into two categories: Healthy and Unhealthy.
@@ -111,7 +110,6 @@ Second Stage: After evaluating the model, the base MobileNetV2 model is unfrozen
 The model’s performance is evaluated using the test dataset, and accuracy metrics are plotted for both the first and second stages of training. The model achieves an accuracy of over 80% on the test dataset.
 
 5. Model Deployment
-=======
 
 b. Model Compilation:
 - Optimizer: Adam with a learning rate of 0.0001
@@ -135,8 +133,6 @@ Load and preprocess the image (resize, normalize, etc.).
 Make predictions using the trained model.
 Display the predicted class.
 
-
-<<<<<<< HEAD
 6. TensorBoard for Training Monitoring
 TensorBoard is used for visualizing and monitoring the training process. It provides useful insights into the training and validation loss, accuracy, and other metrics.
 
@@ -145,7 +141,6 @@ Loss Graph: Shows the loss values during both stages of training.
 ![alt text](<static/accuracy epoch.jpg>)
 Accuracy Graph: Shows the accuracy achieved during both stages of training.
 
-=======
 ## 6. TensorBoard for Training Monitoring
 TensorBoard is used for visualizing and monitoring the training process. It provides useful insights into the training and validation loss, accuracy, and other metrics.
 
@@ -161,10 +156,8 @@ a. Setting Up TensorBoard:
 TensorBoard is integrated into the project using Keras callbacks. The following steps are followed to enable TensorBoard monitoring:
 
 Callback Setup: A TensorBoard callback is created, and the log files are stored in the transfer_learning_log directory with a timestamp.
-<<<<<<< HEAD
-Early Stopping: To avoid overfitting, an EarlyStopping callback is used to stop training early if the validation loss doesn’t improve after 5 epochs.
-=======
+
 Early Stopping: To avoid overfitting, an EarlyStopping callback is used to stop training early if the validation loss doesn’t improve after 5 epochs.
 
 Credit: You can get full raport datasets [here](https://www.kaggle.com/datasets/harideepak/stenosis-new)
->>>>>>> 517403c3075929011f6ef20ad7da281b03cba713
+
