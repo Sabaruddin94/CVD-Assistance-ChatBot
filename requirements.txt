@@ -1,0 +1,11 @@
+streamlit 
+requests
+json
+logging
+numpy 
+datetime
+pandas
+matplotlib
+seaborn 
+tensorflow
+os
