@@ -1,15 +1,16 @@
-Classification of Healthy and Unhealthy Artery
+## Classification of Healthy and Unhealthy Artery
 
 This project focuses on building a deep learning model for the classification of healthy and unhealthy arteries using Convolutional Neural Networks (CNNs) and Transfer Learning with the MobileNetV2 architecture. The model is trained to achieve an accuracy of over 80%, enabling it to classify artery images into two categories: Healthy and Unhealthy.
 
-Machine Learning Workflow
+## Machine Learning Workflow
 The project follows the typical machine learning workflow, which includes Problem Formulation, Data Preparation, Model Development, and Model Deployment.
 
-1. Problem Formulation
+## 1. Problem Formulation
 The task is formulated as a binary classification problem, where the objective is to classify artery images as either:
 
-Healthy
-Unhealthy
+-Healthy
+-Unhealthy 
+
 This classification task is essential for early detection of cardiovascular diseases, which could significantly help in medical diagnoses.
 
 2. Data Preparation
@@ -25,10 +26,11 @@ The validation set is further split into validation and test datasets.
 c. Data Augmentation:
 Data augmentation is applied to improve model generalization by randomly applying transformations to the images, such as:
 
-Horizontal and vertical flipping
-Random rotations
-Random zoom
-Random contrast and brightness adjustments
+-Horizontal and vertical flipping
+-Random rotations
+-Random zoom
+-Random contrast and brightness adjustments
+
 d. Data Visualization:
 Several images from the dataset are visualized to ensure that the data is correctly loaded and augmented.
 
@@ -37,7 +39,7 @@ a. Transfer Learning with MobileNetV2:
 Base Model: The project utilizes MobileNetV2, a pre-trained model, as a feature extractor. It is frozen to retain its learned weights from ImageNet while only training the classifier for our specific task.
 Regularization: L2 regularization and dropout layers are used to reduce overfitting.
 Model Architecture: The model consists of:
-=======
+
 
 ## Classification of Healthy and Unhealthy Artery
 
@@ -90,13 +92,9 @@ Regularization: L2 regularization and dropout layers are used to reduce overfitt
 
 Model Architecture: The model consists of:
 
->>>>>>> 517403c3075929011f6ef20ad7da281b03cba713
-Input layer with image preprocessing
-Augmentation layers for data enhancement
-MobileNetV2 as the feature extractor
-Global average pooling layer
-Fully connected output layer with softmax activation for multi-class classification.
-<<<<<<< HEAD
+
+Input layer with image preprocessing Augmentation layers for data enhancement MobileNetV2 as the feature extractor Global average pooling layer Fully connected output layer with softmax activation for multi-class classification.
+
 b. Model Compilation:
 The model is compiled with:
 
@@ -124,7 +122,7 @@ c. Model Training:
 The model’s performance is evaluated using the test dataset, and accuracy metrics are plotted for both the first and second stages of training. The model achieves an accuracy of over 80% on the test dataset.
 
 ## 5. Model Deployment
->>>>>>> 517403c3075929011f6ef20ad7da281b03cba713
+
 The trained model is used to make predictions on new images. After loading and preprocessing a new image, the model can predict whether the artery is Healthy or Unhealthy.
 
 To make a prediction, the following steps are followed:
@@ -140,17 +138,6 @@ TensorBoard is used for visualizing and monitoring the training process. It prov
 Loss Graph: Shows the loss values during both stages of training.
 ![alt text](<static/accuracy epoch.jpg>)
 Accuracy Graph: Shows the accuracy achieved during both stages of training.
-
-## 6. TensorBoard for Training Monitoring
-TensorBoard is used for visualizing and monitoring the training process. It provides useful insights into the training and validation loss, accuracy, and other metrics.
-
-![alt text](<static/loss epoch.jpg>)
-
-Loss Graph: Shows the loss values during both stages of training.
-![alt text](<static/accuracy epoch.jpg>)
-
-Accuracy Graph: Shows the accuracy achieved during both stages of training.
->>>>>>> 517403c3075929011f6ef20ad7da281b03cba713
 
 a. Setting Up TensorBoard:
 TensorBoard is integrated into the project using Keras callbacks. The following steps are followed to enable TensorBoard monitoring:
