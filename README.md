@@ -50,7 +50,6 @@ Regularization: L2 regularization and dropout layers are used to reduce overfitt
 
 Model Architecture: The model consists of:
 
-
 Input layer with image preprocessing Augmentation layers for data enhancement MobileNetV2 as the feature extractor Global average pooling layer Fully connected output layer with softmax activation for multi-class classification.
 
 b. Model Compilation:
@@ -59,22 +58,6 @@ The model is compiled with:
 Optimizer: Adam with a learning rate of 0.0001
 Loss function: SparseCategoricalCrossentropy (since the labels are integers)
 Metrics: Accuracy
-c. Model Training:
-First Stage: The model is trained for 10 epochs using the frozen MobileNetV2 feature extractor.
-Second Stage: After evaluating the model, the base MobileNetV2 model is unfrozen, and the training continues with a lower learning rate to fine-tune the entire model.
-4. Model Evaluation
-The model’s performance is evaluated using the test dataset, and accuracy metrics are plotted for both the first and second stages of training. The model achieves an accuracy of over 80% on the test dataset.
-
-5. Model Deployment
-
-b. Model Compilation:
-- Optimizer: Adam with a learning rate of 0.0001
-- Loss function: SparseCategoricalCrossentropy (since the labels are integers)
-- Metrics: Accuracy
-  
-c. Model Training:
--First Stage: The model is trained for 10 epochs using the frozen MobileNetV2 feature extractor.
--Second Stage: After evaluating the model, the base MobileNetV2 model is unfrozen, and the training continues with a lower learning ---rate to fine-tune the entire model.
 
 ## 4. Model Evaluation
 The model’s performance is evaluated using the test dataset, and accuracy metrics are plotted for both the first and second stages of training. The model achieves an accuracy of over 80% on the test dataset.
@@ -89,7 +72,7 @@ Load and preprocess the image (resize, normalize, etc.).
 Make predictions using the trained model.
 Display the predicted class.
 
-6. TensorBoard for Training Monitoring
+## 6. TensorBoard for Training Monitoring
 TensorBoard is used for visualizing and monitoring the training process. It provides useful insights into the training and validation loss, accuracy, and other metrics.
 
 ![alt text](<static/loss epoch.jpg>)
