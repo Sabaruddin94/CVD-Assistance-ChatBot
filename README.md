@@ -76,8 +76,10 @@ Display the predicted class.
 TensorBoard is used for visualizing and monitoring the training process. It provides useful insights into the training and validation loss, accuracy, and other metrics.
 
 ![alt text](<static/loss epoch.jpg>)
+
 Loss Graph: Shows the loss values during both stages of training.
 ![alt text](<static/accuracy epoch.jpg>)
+
 Accuracy Graph: Shows the accuracy achieved during both stages of training.
 
 a. Setting Up TensorBoard:
