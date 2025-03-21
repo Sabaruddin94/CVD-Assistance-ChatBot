@@ -78,6 +78,7 @@ TensorBoard is used for visualizing and monitoring the training process. It prov
 ![alt text](<static/loss epoch.jpg>)
 
 Loss Graph: Shows the loss values during both stages of training.
+
 ![alt text](<static/accuracy epoch.jpg>)
 
 Accuracy Graph: Shows the accuracy achieved during both stages of training.
